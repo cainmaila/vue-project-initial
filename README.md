@@ -23,7 +23,7 @@ npm i --save-dev babel-core babel-loader babel-preset-es2015 css-loader del ejs 
         "css-loader": *,
         "del": *,
         "ejs": *,
-        "file-loader": *",
+        "file-loader": *,
         "gulp": *,
         "gulp-concat": *,
         "gulp-ejs": *,
