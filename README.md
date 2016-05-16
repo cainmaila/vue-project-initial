@@ -6,7 +6,7 @@ vue專案備忘紀錄
 ### 全域套件
 ```
 npm i -g gulp-cli
-npm install -g nodemon
+npm i -g nodemon
 ```
 
 ### 開發套件
