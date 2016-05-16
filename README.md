@@ -10,12 +10,12 @@ npm i -g nodemon
 ```
 
 ### 開發套件
-```
+```bash
 npm i --save-dev babel-core babel-loader babel-preset-es2015 css-loader del ejs file-loader gulp gulp-concat gulp-ejs gulp-flatten gulp-less gulp-livereload gulp-nodemon gulp-uglify less less-loader raw-loader should style-loader url-loader vue webpack webpack-stream babel-preset-stage-0 vue-loader
 ```
 
 內容
-```
+```json
 "devDependencies": {
         "babel-core": *,
         "babel-loader": *,
@@ -47,7 +47,7 @@ npm i --save-dev babel-core babel-loader babel-preset-es2015 css-loader del ejs 
 ```
 
 ### webpack.config.js
-```
+```js
 var path = require('path');
 var webpack = require('webpack');
 module.exports = {
