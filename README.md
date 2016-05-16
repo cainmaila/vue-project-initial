@@ -46,6 +46,11 @@ npm i --save-dev babel-core babel-loader babel-preset-es2015 css-loader del ejs 
     }
 ```
 
+### Node服務
+```bash
+npm i --save body-parser compression cookie-parser cors express method-override express-ipv4
+```
+
 ### webpack.config.js
 ```js
 var path = require('path');
