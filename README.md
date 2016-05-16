@@ -43,4 +43,6 @@ npm i --save-dev babel-core babel-loader babel-preset-es2015 css-loader del ejs 
         "webpack-stream": *,
         "babel-preset-stage-0": *
     }
-    ```
+```
+
+### webpack.config.js
