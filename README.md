@@ -1,2 +1,2 @@
-# vue-project-initial
-vue-project-initial 中文測試
+# Vue專案包備忘
+備忘紀錄
