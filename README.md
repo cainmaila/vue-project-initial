@@ -47,3 +47,58 @@ npm i --save-dev babel-core babel-loader babel-preset-es2015 css-loader del ejs 
 ```
 
 ### webpack.config.js
+```
+var path = require('path');
+var webpack = require('webpack');
+module.exports = {
+    devtool: "source-map",
+    entry: {
+        'index': ['./src/index.js']
+    },
+    output: {
+        filename: '[name].js',
+        publicPath: 'js/',
+        path: path.join(__dirname, 'www', 'js')
+    },
+    module: {
+        noParse: [],
+        loaders: [{
+            loader: "babel-loader",
+            test: /\.js$/,
+            query: {
+                presets: ['es2015']
+            }
+        }, {
+            test: /\.less$/,
+            loader: 'style!css!less'
+        }, {
+            test: /\.html$/,
+            loader: 'raw'
+        }, {
+            test: /\.(png|jpg)$/,
+            loader: 'url?limit=25000'
+        },{
+            test: /\.vue$/,
+            loader: 'vue'
+        }]
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            },
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendors',
+            filename: "vendors.js",
+            minChunks: Infinity
+        }),
+        // new webpack.ProvidePlugin({
+        //     $: "jquery",
+        //     jQuery: "jquery",
+        //     d3: "d3"
+        // })
+    ]
+};
+
+```
